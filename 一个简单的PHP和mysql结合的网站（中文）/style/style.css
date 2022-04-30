@@ -1,0 +1,78 @@
+* { margin:0; padding:0; font-size: 13px; color: #757575; }
+#header { width: 980px;	margin: 0 auto; }	
+#wrapper { width: 980px; margin: 0 auto;background:#FFFFFF url(../images/img01.jpg) repeat-x top left}
+#tableContainer {display: table;border-spacing: 10px;}
+#newRow {display: table-row;}
+#left { display: table-cell;width:25%;}
+#main{ display:table-cell;}
+#footer {clear: both; width: 980px; height: 50px; margin: 0 auto;background: #FFFFFF url(../images/img01.jpg) repeat-x top left;}
+
+h1, h2, h3 {color: #31363B;	letter-spacing: -1px;}
+h1, h1 a, h2, h2 a {text-decoration: none;}
+h1 a:hover, h2 a:hover {text-decoration: underline;}
+h1 {font-size: 38px;}
+h2 {font-size: 28px;font-weight: normal;}
+h3 {font-size: 16px;}
+p, ul, ol {	margin-top: 1.5em;	line-height: 190%;}
+ul, ol {margin-left: 3em;}
+blockquote {margin-left: 3em; margin-right: 3em;}
+a {color: #C11A00; text-decoration:none;}
+a:hover {text-decoration: none;}
+hr {display: none;}
+
+
+/*新闻列表相关页面*/
+.main a:hover{ text-decoration:none;}
+.main a:link{ text-decoration:none;}
+.main{ width:100%; float:left;}
+.main li{ list-style:none; border-bottom:1px dotted #ccc; margin-bottom:20px; color:#66657D; }
+.main .news_title{ font-size:22px; font-weight:bold; color:#3B3B3B;line-height:35px;}
+.main .news_title a{color:#444;}
+.main p{ margin:10px;;line-height:28px; font-size:14px;}
+.main .news_content{text-indent:28px;}
+.main .news_show{font-size:16px;}
+.main .news_show a{color:#1685BD;font-size:14px; text-decoration:none;}
+.main .news_label{ color:#393939;}
+.page{font-size:12px;float:right;}
+.page a{ text-decoration:none;}
+.newsclass{color:#ff0000; font-weight:bold;}
+
+/*新闻展示样式*/
+.news_show{ margin:0 auto;}
+.news_show .show_title {text-align:center; font-size:14px; border-bottom:1px dotted #c7c7c7; padding-bottom:15px;margin-bottom:20px;}
+.news_show h2{ font-size:24px;}
+.news_show span{ padding-right:10px;}
+.news_show .paging{ text-align:center;}
+.news_show a{ color:#0871A5;}
+.news_show .content{font-size:15px;text-indent:28px;}
+.news_show .operator{padding-top:25px; text-align:center; }
+/*新闻评论*/
+.table,.table th,.table td{border:1px solid #cfe1f9;}
+.table{border-bottom:#cfe1f9 solid 2px;border-collapse:collapse;line-height:38px;width:90%;margin:15px auto;}
+.table th{background:#eef7fc;color: #185697;padding:0 6px;}
+.table td{padding:0 12px;}
+.form-btn{height: 26px;border: 1px #949494 solid;padding: 0 10px;cursor: pointer;background:#fff;margin-right:10px;}
+.comments{  width:100%; overflow:auto; word-break:break-all;  }
+
+/*登录页面的CSS*/
+ 
+.login{width:500px; margin:15px auto;padding:20px;border:1px solid #ccc;background-color:#fff;}
+.login .title{text-align:center;padding-bottom:10px;}
+.login th{font-weight:normal;text-align:right;}
+.login input{width:180px;border:1px solid #ccc;height:20px;padding-left:4px;}
+.login .button{background-color:#0099ff;border:1px solid #0099ff;color:#fff;width:80px;height:25px;margin:0 5px;cursor:pointer;}
+.login .td-btn{text-align:center;padding-top:10px;}
+.login .td-auto-login{font-size:14px;text-align:left;padding-left:90px;padding-top:5px;}
+.login .checkbox{width:auto;vertical-align:middle;}
+.login label{vertical-align:middle;}
+.login img {vertical-align:top;}
+.login a{font-size:12px; color:#999; text-decoration:none;}
+
+/*注册页面的CSS*/
+.reg{border:1px solid #ccc;background-color:#fff; padding:5px;}
+.reg th{font-weight:normal;text-align:right;}
+.reg input{border:1px solid #ccc;height:20px;padding-left:4px;   }
+.reg .button{background-color:#0099ff;border:1px solid #0099ff;color:#fff;width:80px;height:25px;margin:0 5px;cursor:pointer;}
+.reg .td-btn{text-align:center;padding-top:10px;}
+
+
