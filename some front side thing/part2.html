@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>part 2 Salary Calculator</title>
+		Salary Calculator
+	</head>
+	
+	<body>
+		
+		<style>
+			body{
+				background-color: white;
+				color: #003;
+				padding: 3em;
+			}
+			head{
+			
+			font-family:"Times New Roman", Times, serif;}
+			
+			
+			}
+			
+		</style>
+		<script>
+			function abc()
+			{			 var wage,hours,pay;
+			  var pay= document.getelementbyid("pay").value;
+			
+			 var hours = document.getelementbyid("hours").value;
+			
+			 if (hours <= 40){ 
+				 wage = pay* hours
+				 
+			 ;}
+			 else if (hours > 40 && hours <85){
+				 wage = pay *40 + 1.5*pay*(hours-40);
+			 }
+			 
+			 else {
+				 alert("you enters a number of hours that is larger than 84");
+						 
+				 
+			 }
+			 document.getElementById('result').innerHTML = wage;
+			 }
+			 
+			
+			 
+		
+			
+			
+		</script>
+		<h2>
+			Enter your hourly wage and the number of hours you worked this week, then click to calculate your gross pay for the week. 
+			You will earn time and a half for any hours exceeding 40.
+		</h2>
+		<h2>
+	     your hourly wage:
+		 <input type="text"  id="pay" value="" /><br/>
+		  Enter the number of hours worked this week: 
+		   <input type="text"  id="hours" value="" />
+		</h2>
+		<input type="button" value="Calculate Pay for Week"  onclick=abc()/>
+		Your gross pay for the week is: <span id = "result">
+		 
+		
+	</body>
+</html>

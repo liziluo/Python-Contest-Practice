@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body><script>
+	function Student(name,studentid,age,entranceScore,telephone){
+		this.name =name;
+		this.studentid=studentid;
+		this.age =age;
+		this.entranceScore =entranceScore;
+		this.telephone =telephone;
+		this.showme=function (){
+			document.write("your name:"+name+"</br>your studentid is :"+studentid+"</br>your age is "+age +"</br>your EntranceScore is:"+entranceScore+"</br>Your telephone is :"+telephone+"</br>");
+		}
+	}
+	
+	var abc =new Student('sylvia','2012312','12','213','21312312313');
+	
+	abc.showme();
+	var cbd =new Student('asdassd','2312312','16','232','2312123132123');
+	cbd.showme()
+	</script>
+	</body>
+</html>

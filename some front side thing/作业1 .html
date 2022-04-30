@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function checkbox(){
+			var name = document.getElementById("username").value;
+			var hobby=document.getElementsByName("hobby");
+			var hlen=hobby.length;
+			var chestr="";
+			for (i=0;i<hlen;i++){
+				if(hobby[i].checked == true){
+					chestr+=hobby[i].value+",";
+			}
+		}
+	
+			if(chestr == ""){
+				alert("Please choose your hobby");
+			}
+			var birth_info = document.getElementById("planet").value;
+			var str1=document.getElementsByName("email");
+			var hlen=str1.length;
+			var chestr1="";
+	
+			for (i=0;i<hlen;i++){
+			if(str1[i].checked == true){
+			chestr+=str1[i].value+",";
+			}
+		}
+			if(chestr1 == ""){
+				alert("Please choose whether to receive mail");
+			}
+	
+			document.getElementById("result").innerHTML ="your name is:" + name + "<br />"+
+			"your birth place is:" + birth_info + "<br />"+
+			"your hobby is:" + chestr + "<br />"+
+			"your choice about receing email is:" + chestr1;
+
+		}
+
+	</script>
+		<form name="form1">
+			Name:
+			<input type="text" name="username" id="username"><br />
+
+			hobby:
+			<label><input type="checkbox" value="heliskiing" name="hobby">Heli-skiing</label>
+			<label><input type="checkbox" value="pickle" name="hobby">Pickle eating</label>
+			<label><input type="checkbox" value="wanlnut" name="hobby">Making</label>
+			<br />
+
+			Planet of Birth:
+			<select name="planet" id="planet">
+				<option>Earth</option>
+				<option>Mars</option>
+			</select>
+			<br />
+
+			Receive email:
+			<label><input type="radio" value="Yes" name="email">Yes</label>
+			<label><input type="radio" value="No" name="email">No</label>
+			<label><input type="radio" value="Do I have a choice" name="email">Do I have a choice</label>
+			<br />
+
+			<input type="button" value="提交查询" onclick="checkbox()">
+
+		</form>
+		<div id="result"></div>
+	</body>
+</html>

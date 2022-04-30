@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body><script>
+	function pet (type ,name ,age,color ,){
+		this.type  =type ;
+		this.name =name ;
+		this.age =age;
+		this.color  =color ;
+		this.showme=function (){
+			document.write("</br> this pet type is:"+type+"</br>its name  is :"+name +"</br>its age is "+age +"</br>its color  is:"+color +"</br>");
+		}
+	}
+	
+	var abc =new pet('dog','white',12,'white',);
+	
+	abc.showme();
+	var cbd =new pet('cat','black',16,'black');
+	cbd.showme()
+	</script>
+	</body>
+</html>

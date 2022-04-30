@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<table border="1"></table>
+		<h5>Enter the number of credits you have earned and click OK</h5>
+		<label>Number of credits:</label>
+		<input type="text" id="score" /><br>
+			
+	<script>
+			function myfuction(){
+			var i = document.getElementById('score').value;
+			if(i >=1 && i<= 23){
+				document.getElementById('result').innerHTML = "With" + i + "credits, you are a freshman."			
+			}else if(i>=24 && i<=53){
+				document.getElementById('result').innerHTML = "With" + i + "credits, you are a sophomore."			
+			}else if (i>= 54 && i<= 83){
+				document.getElementById('result').innerHTML = "With" + i + "credits, you are a junior."
+			}else{
+				document.getElementById('result').innerHTML = "With" + i + "credits, you are a senior."
+			}
+		}
+	</script>
+	<input type = "button"  id = "OK"  value = "ok" onclick= myfuction() ><span id = "result"></span>	
+	</body>
+</html>

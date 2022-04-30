@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body><script>
+	function aCircle(radius){
+		this.radius =radius;
+		this.area=function (){
+			document.write(radius*radius*3.14);
+		}
+		this.circumference=function (){
+			console.log(radius*2*3.14);
+		}
+	}
+	
+	var abc =new aCircle(12);
+	abc.area();
+	abc.circumference()
+	var cbc =new aCircle(14);
+	cbc.area()
+	
+	</script>
+	</body>
+</html>

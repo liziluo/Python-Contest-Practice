@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{background-color: green}
+		h1{color:white}
+		p{
+			color:white
+		}
+		input{
+			font-size: 10px;
+			width:auto
+		}
+	</style>
+	<title>Salary Calculator</title>
+</head>
+				
+	<script type="text/javascript">
+			function myFunction{
+			var num1=document.getElementById("wage").value;
+			var hour=document.getElementById("hour").value;
+			var gross;
+			if (num1 >=0 && hour <=40){
+				gross = hour * num1;
+				document.getElementById('result').innerHTML = gross;
+			}else if(num1 >=0 && hour >40){
+				gross = num1 *40 + (hour-40) * 1.5 * num1;
+				document.getElementById('result').innerHTML = gross;
+			}else{
+				alert("do not calculate");
+			}
+			}
+	
+	</script>
+	
+	<body>
+		<h1>Salary Calculator</h1>
+		<h3>Enter your hourly wage and the number of hours you worked this week, then click to calculate your gross pay for the week.You will earn time and a half for any hours exceeding 40.</h3>
+		<label>Enter your hourly wage:</label>
+		<input type="text" id="num1" value=""  onkeyup="myFunction()"/><br>
+		<label>Enter the number of hours worked this week:</label> 
+		<input type="text" id="hour" value="" onkeyup="myFunction()"><br>
+	
+		<input type = "button" id="gross" value="Calculate Pay for week" onclick= myFunciton />
+		<p id="demo"></p>
+	
+	
+		<label>
+			Your gross pay for the week is: $ 
+			<span id="result"></span>
+			
+		</label>
+		<input type="text" id=gross>
+	
+
+
+
+</body>
+</html>
